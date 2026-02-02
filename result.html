@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h3 id="output"></h3>
+    <button onclick="cleardata()">Clear Information</button>
+    <script>
+        document.getElementById("output").textContent=sessionStorage.getItem("fname")+""+sessionStorage.getItem("lname");
+        function cleardata()
+        {
+            sessionStorage.clear();
+            document.getElementById("output").textContent="";
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
